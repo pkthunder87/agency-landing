@@ -1,0 +1,29 @@
+/* ===========================
+   ToC 
+
+   1.0 Phones 0 - 549px 
+   1.1 Results
+   =========================== */
+
+/* =================
+   Custom Properties
+   ================= */
+
+:root {
+  // Colors
+  --color-light-cyan: hsl(193, 38%, 86%);
+  --color-neon-green: hsl(150, 100%, 66%);
+  --color-grayish-blue: hsl(217, 19%, 38%);
+  --color-dark-grayish-blue: hsl(217, 19%, 24%);
+  --color-dark-blue: hsl(218, 23%, 16%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+/* ==============================
+   1.0 Phones & Tablets 0 - 900px 
+   ============================== */
+
+.main-title {
+  font-size: 5rem;
+  color: hsl(var(--color-light-cyan));
+}
