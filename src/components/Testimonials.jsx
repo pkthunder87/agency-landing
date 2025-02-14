@@ -1,5 +1,5 @@
 function Testimonials() {
-  return <div className="agency__tests">Testimonials</div>;
+  return <section className="agency__tests">Testimonials</section>;
 }
 
 export default Testimonials;

@@ -34,7 +34,122 @@
    1.0 Phones & Tablets 0 - 900px 
    ============================== */
 
-.main-title {
-  font-size: 5rem;
-  color: var(--color-soft-red);
+.agency {
+  &__hero--bg {
+    background-image: url("assets/images/mobile/image-header.jpg");
+    padding-block-start: 2.5rem;
+    padding-block-end: 49rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    color: var(--color-white);
+
+    @media (min-width: 550px) {
+      background-image: url("assets/images/desktop/image-header.jpg");
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 3rem;
+
+    .nav__logo {
+    }
+
+    .nav__right {
+      cursor: pointer;
+    }
+  }
+
+  &__hero {
+    .hero__title {
+      position: absolute;
+      top: 25%;
+      font-size: 4.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      font-weight: 900;
+
+      @media (min-width: 550px) {
+        top: 20%;
+        transform: translate(40%);
+      }
+    }
+
+    .hero__arrow {
+      position: absolute;
+      left: 45%;
+      top: 52%;
+
+      @media (min-width: 550px) {
+        left: 48%;
+        top: 33%;
+      }
+    }
+  }
+
+  &__learn {
+    margin-block-start: -1rem;
+    background-color: var(--color-white);
+
+    @media (min-width: 550px) {
+      margin-block-start: -4.5rem;
+    }
+
+    .learn {
+      &__bot {
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        align-items: center;
+        padding-inline: 3rem;
+        padding-block: 5rem;
+        color: var(--color-dark-blue);
+      }
+
+      &__title {
+        font-size: 3rem;
+      }
+
+      &__text {
+        color: var(--color-dark-gray-blue);
+        font-size: 1.9rem;
+        text-align: center;
+      }
+
+      &__more {
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        cursor: pointer;
+        padding-inline: 1rem;
+      }
+    }
+  }
+}
+
+.highlight {
+  position: relative;
+  width: fit-content;
+  overflow: visible;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 1.15rem;
+    left: 0;
+    right: 0;
+    bottom: -0.25rem;
+    border-radius: 50px;
+  }
+
+  &--1::before {
+    background-color: hsla(51, 100%, 49%, 0.25);
+  }
+
+  &--2::before {
+    background-color: hsla(7, 99%, 70%, 0.25);
+  }
 }
