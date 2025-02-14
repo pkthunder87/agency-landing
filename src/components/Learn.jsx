@@ -9,7 +9,6 @@ function Learn({ num, img, imgAlt, title, text }) {
         <h2 className="learn__title serifs">{title}</h2>
         <p className="learn__text">{text}</p>
         <p className={`learn__more highlight  serifs highlight--${num}`}>
-          {/* <mark className={`learn__mark mark--${num}`}>Learn More</mark> */}
           learn more
         </p>
       </div>

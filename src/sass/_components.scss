@@ -132,6 +132,57 @@
       }
     }
   }
+
+  .concept--2 {
+    margin-block-start: -13.5rem;
+  }
+
+  &__concept {
+    padding-inline: 3rem;
+    padding-block-start: 2.5rem;
+    padding-block-end: 20rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    text-align: center;
+
+    .concept {
+      &__title {
+        font-size: 2.85rem;
+        font-weight: 900;
+        margin-block-start: 34rem;
+        margin-block-end: 4rem;
+
+        &--1 {
+          color: var(--color-dark-desat-cyan);
+        }
+        &--2 {
+          color: var(--color-very-dark-desat-blue);
+        }
+      }
+
+      &__text {
+        font-size: 1.5rem;
+        text-wrap: stable;
+        scale: 1.05;
+        line-height: 1.65em;
+        &--1 {
+          color: var(--color-dark-desat-cyan);
+        }
+        &--2 {
+          color: var(--color-very-dark-desat-blue);
+        }
+      }
+    }
+  }
+
+  &__tests {
+    background-color: var(--color-white);
+    margin-block-start: -14rem;
+    position: relative;
+    z-index: 1;
+    height: 50rem;
+  }
 }
 
 .highlight {
