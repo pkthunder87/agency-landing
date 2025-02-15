@@ -107,7 +107,7 @@
         padding-inline: 3rem;
         padding-block-start: 6rem;
         padding-block-end: 7.4rem;
-        color: var(--color-dark-blue);
+        color: var(--color-very-dark-desat-blue);
       }
 
       &__title {
@@ -157,7 +157,7 @@
           color: var(--color-dark-desat-cyan);
         }
         &--2 {
-          color: var(--color-very-dark-desat-blue);
+          color: var(--color-dark-blue);
         }
       }
 
@@ -170,7 +170,7 @@
           color: var(--color-dark-desat-cyan);
         }
         &--2 {
-          color: var(--color-very-dark-desat-blue);
+          color: var(--color-dark-blue);
         }
       }
     }
@@ -181,7 +181,65 @@
     margin-block-start: -14rem;
     position: relative;
     z-index: 1;
-    height: 50rem;
+    text-align: center;
+    padding-block-start: 7rem;
+    padding-block-end: 9rem;
+    padding-inline: 3rem;
+
+    .tests {
+      display: flex;
+
+      &__title {
+        text-transform: uppercase;
+        font-size: 1.65rem;
+        font-weight: 900;
+        letter-spacing: 4px;
+        color: var(--color-gray-blue);
+      }
+
+      &__list {
+        margin-block-start: 6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 6.5rem;
+      }
+    }
+
+    .test {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &__img {
+        width: 75px;
+        height: 75px;
+        margin-block-end: 3rem;
+
+        img {
+          border-radius: 100%;
+        }
+      }
+
+      &__text {
+        font-size: 1.85rem;
+        line-height: 1.75em;
+        color: var(--color-very-dark-gray-blue);
+        margin-block-end: 3rem;
+      }
+
+      &__name {
+        font-size: 1.85rem;
+        font-weight: 900;
+        color: var(--color-very-dark-desat-blue);
+        margin-block-end: 1rem;
+      }
+
+      &__job {
+        font-size: 1.45rem;
+        color: var(--color-gray-blue);
+      }
+    }
   }
 }
 

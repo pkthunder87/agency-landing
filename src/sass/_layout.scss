@@ -12,11 +12,22 @@
 
 :root {
   // Colors
-  --color-light-cyan: hsl(193, 38%, 86%);
-  --color-neon-green: hsl(150, 100%, 66%);
-  --color-grayish-blue: hsl(217, 19%, 38%);
-  --color-dark-grayish-blue: hsl(217, 19%, 24%);
-  --color-dark-blue: hsl(218, 23%, 16%);
+
+  // Primary
+  --color-soft-red: hsl(7, 99%, 70%);
+  --color-yellow: hsl(51, 100%, 49%);
+  // graphic design text
+  --color-dark-desat-cyan: hsl(167, 40%, 24%);
+  // photography text
+  --color-dark-blue: hsl(198, 62%, 26%);
+  // footer
+  --color-dark-mod-cyan: hsl(168, 34%, 41%);
+
+  // Neutral
+  --color-very-dark-desat-blue: hsl(212, 27%, 19%);
+  --color-very-dark-gray-blue: hsl(213, 9%, 39%);
+  --color-dark-gray-blue: hsl(232, 10%, 55%);
+  --color-gray-blue: hsl(210, 4%, 67%);
   --color-white: hsl(0, 0%, 100%);
 }
 
