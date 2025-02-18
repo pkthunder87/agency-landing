@@ -242,6 +242,14 @@
     }
   }
 
+  &__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (min-width: 520px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
   &__footer {
     position: relative;
   }

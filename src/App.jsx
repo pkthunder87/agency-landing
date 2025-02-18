@@ -85,7 +85,7 @@ function App() {
         <Testimonials />
       </main>
 
-      <Gallery />
+      <Gallery isMobile={isMobile} />
       <Footer />
     </div>
   );
