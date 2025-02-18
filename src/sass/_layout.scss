@@ -40,15 +40,16 @@
   text-align: center;
 
   width: max-content;
-  color: var(--color-white);
+  color: hsl(168, 52%, 34%);
   position: absolute;
-  // bottom: -7.5rem;
+  bottom: 2rem;
   left: 50%;
   transform: translate(-50%);
 }
 
 .attribution a {
-  color: var(--color-soft-red);
+  text-decoration: none;
+  color: var(--color-dark-desat-cyan);
 }
 
 /* =============
