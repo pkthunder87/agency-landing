@@ -36,7 +36,7 @@
 
 .agency {
   &__hero--bg {
-    background-image: url("assets/images/mobile/image-header.jpg");
+    background-image: url("./assets/images/mobile/image-header.jpg");
     padding-block-start: 2.5rem;
     padding-block-end: 49rem;
     background-repeat: no-repeat;
@@ -45,7 +45,7 @@
     color: var(--color-white);
 
     @media (min-width: 550px) {
-      background-image: url("assets/images/desktop/image-header.jpg");
+      background-image: url("./assets/images/desktop/image-header.jpg");
     }
   }
 

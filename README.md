@@ -11,7 +11,7 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 ### Links
 
-- Live Site URL: [Github Pages](https://pk-advice-gene.netlify.app/)
+- Live Site URL: [Github Pages](https://pk-agency-landing.netlify.app/)
 
 ### Built with
 
