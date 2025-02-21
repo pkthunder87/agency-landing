@@ -1,3 +1,5 @@
+import ModalMenu from "./ModalMenu";
+
 function NavBar() {
   return (
     <nav className="agency__nav">
@@ -8,7 +10,10 @@ function NavBar() {
       />
 
       <div className="nav__right">
-        <img src="./assets/images/icon-hamburger.svg" alt="menu icon" />
+        <div className="nav__menu">
+          <img src="./assets/images/icon-hamburger.svg" alt="menu icon" />
+          <ModalMenu />
+        </div>
       </div>
     </nav>
   );

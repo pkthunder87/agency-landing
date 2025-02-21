@@ -28,6 +28,9 @@
   --color-dark-gray-blue: hsl(232, 10%, 55%);
   --color-gray-blue: hsl(210, 4%, 67%);
   --color-white: hsl(0, 0%, 100%);
+
+  // Spacing
+  --margin-gutters: 3rem;
 }
 
 /* ==============================
@@ -53,13 +56,59 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 3rem;
+    padding-inline: var(--margin-gutters);
 
     .nav__logo {
     }
 
     .nav__right {
       cursor: pointer;
+
+      .nav__menu {
+        .menu {
+          &__modal {
+            cursor: default;
+
+            text-align: center;
+            width: calc(100% - var(--margin-gutters) * 2);
+            position: absolute;
+            right: 3rem;
+            background: var(--color-white);
+            z-index: 1;
+
+            a {
+              font-size: 1.95rem;
+              text-decoration: none;
+            }
+
+            a:link,
+            a:visited {
+              text-decoration: none;
+              color: var(--color-dark-gray-blue);
+            }
+          }
+
+          &__nav {
+          }
+
+          &__links {
+            display: flex;
+            flex-direction: column;
+            gap: 2.52rem;
+            margin-block: 3.1rem;
+          }
+
+          &__button {
+            font-size: 1.6rem;
+            border-radius: 100px;
+            text-transform: uppercase;
+            background-color: var(--color-yellow);
+            padding-inline: 2.7rem;
+            padding-block: 1.7rem;
+            margin-block-end: 4rem;
+          }
+        }
+      }
     }
   }
 
@@ -104,7 +153,7 @@
         gap: 2.8rem;
         flex-direction: column;
         align-items: center;
-        padding-inline: 3rem;
+        padding-inline: var(--margin-gutters);
         padding-block-start: 6rem;
         padding-block-end: 7.4rem;
         color: var(--color-very-dark-desat-blue);
@@ -138,7 +187,7 @@
   }
 
   &__concept {
-    padding-inline: 3rem;
+    padding-inline: var(--margin-gutters);
     padding-block-start: 2.5rem;
     padding-block-end: 20rem;
     background-repeat: no-repeat;
@@ -184,7 +233,7 @@
     text-align: center;
     padding-block-start: 7rem;
     padding-block-end: 9rem;
-    padding-inline: 3rem;
+    padding-inline: var(--margin-gutters);
 
     .tests {
       display: flex;
