@@ -34,7 +34,7 @@ function Gallery({ isMobile }) {
           src={`./assets/images/${
             isMobile ? "mobile" : "desktop"
           }/image-gallery-sugar-cubes.jpg`}
-          alt="Half an orange"
+          alt="Wall of sugar cubes"
         />
       </div>
     </section>

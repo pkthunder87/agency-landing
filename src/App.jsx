@@ -7,6 +7,7 @@ import Concept from "./components/Concept";
 import Testimonials from "./components/Testimonials";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
+import { useEffect, useState } from "react";
 
 const isMobile = true;
 
@@ -45,6 +46,12 @@ const concept2 = {
 };
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth < 540) setIsMobile(true);
+  }, []);
+
   return (
     <div className="agency">
       <header className="agency__hero--bg">
