@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ModalMenu from "./ModalMenu";
+import NavMobile from "./NavMobile";
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,14 +22,28 @@ function NavBar() {
       />
 
       <div className="nav__right">
+        {/* <NavMobile
+          handleClick={handleClick}
+          menuOpenedStyle={menuOpenedStyle}
+          isMenuOpen={isMenuOpen}
+        /> */}
         <div className="nav__menu" onClick={handleClick}>
-          <img
-            className="menu__icon"
-            src="./assets/images/icon-hamburger.svg"
-            alt="menu icon"
-            style={{ filter: menuOpenedStyle }}
-          />
-          {isMenuOpen && <ModalMenu />}
+          <div className="menu__desk">
+            <nav className="desk__nav">
+              <ul className="desk__links">
+                <li className="desk__link">
+                  <a href="#">About</a>
+                </li>
+                <li className="desk__link">
+                  <a href="#">Services</a>
+                </li>
+                <li className="desk__link">
+                  <a href="#">Projects</a>
+                </li>
+              </ul>
+              <button className="desk__button serifs">Contact</button>
+            </nav>
+          </div>
         </div>
       </div>
     </nav>

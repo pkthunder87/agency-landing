@@ -66,6 +66,37 @@
 
       .nav__menu {
         .menu {
+          &__desk {
+            cursor: default;
+
+            a {
+              font-size: 1.95rem;
+              text-decoration: none;
+            }
+
+            a:link,
+            a:visited {
+              text-decoration: none;
+              color: var(--color-white);
+            }
+
+            .desk {
+              &__nav {
+                display: flex;
+                gap: 2rem;
+              }
+
+              &__links {
+                display: flex;
+                gap: 2rem;
+              }
+
+              &__button {
+                font-size: 2rem;
+              }
+            }
+          }
+
           &__modal {
             cursor: default;
 
