@@ -1,6 +1,11 @@
 import ModalMenu from "./ModalMenu";
 
-function NavMobile({ handleClick, menuOpenedStyle, isMenuOpen }) {
+function NavMobile({
+  handleClick,
+  menuOpenedStyle,
+  isMenuOpen,
+  setIsMenuOpen,
+}) {
   return (
     <div className="nav__menu" onClick={handleClick}>
       <img
@@ -9,7 +14,9 @@ function NavMobile({ handleClick, menuOpenedStyle, isMenuOpen }) {
         alt="menu icon"
         style={{ filter: menuOpenedStyle }}
       />
-      {isMenuOpen && <ModalMenu />}
+      {isMenuOpen && (
+        <ModalMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      )}
     </div>
   );
 }

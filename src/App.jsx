@@ -55,7 +55,7 @@ function App() {
   return (
     <div className="agency">
       <header className="agency__hero--bg">
-        <NavBar />
+        <NavBar isMobile={isMobile} />
         <Hero />
       </header>
 

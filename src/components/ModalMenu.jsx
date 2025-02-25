@@ -1,4 +1,30 @@
-function ModalMenu() {
+import { useEffect } from "react";
+
+function ModalMenu({ isMenuOpen, setIsMenuOpen }) {
+  useEffect(
+    function () {
+      if (!isMenuOpen) {
+        return;
+      }
+
+      function handleKeyPress(e) {
+        switch (e.key) {
+          case "Escape":
+            {
+              console.log("Key pressed");
+              setIsMenuOpen(false);
+            }
+            break;
+        }
+      }
+
+      document.addEventListener("keyup", handleKeyPress);
+
+      return () => document.removeEventListener("keyup", handleKeyPress);
+    },
+    [isMenuOpen, setIsMenuOpen]
+  );
+
   return (
     <div className="menu__modal">
       <nav className="menu__nav">
