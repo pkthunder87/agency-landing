@@ -342,6 +342,10 @@
         font-weight: 900;
         letter-spacing: 4px;
         color: var(--color-gray-blue);
+
+        @media (min-width: 640px) {
+          font-size: 2.5rem;
+        }
       }
 
       &__list {
@@ -349,6 +353,11 @@
         display: flex;
         flex-direction: column;
         gap: 6.5rem;
+
+        @media (min-width: 640px) {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
       }
     }
 
@@ -357,6 +366,26 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      &--1 {
+        @media (min-width: 640px) {
+          align-self: start;
+        }
+      }
+
+      &--2 {
+        @media (min-width: 640px) {
+          align-self: end;
+        }
+      }
+
+      &--3 {
+        @media (min-width: 640px) {
+          grid-column: span 2;
+          width: 50%;
+          justify-self: center;
+        }
+      }
 
       &__img {
         width: 75px;

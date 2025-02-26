@@ -1,6 +1,6 @@
-function Testimony({ name, imgPro, text, job }) {
+function Testimony({ num, name, imgPro, text, job }) {
   return (
-    <li className="test">
+    <li className={`test test--${num}`}>
       <div className="test__img">
         <img src={imgPro} alt={`${name}'s profile pic`} />
       </div>
