@@ -49,6 +49,9 @@
 
     @media (min-width: 550px) {
       background-image: url("./assets/images/desktop/image-header.jpg");
+
+      background-size: cover;
+      background-position: center;
     }
   }
 
@@ -133,12 +136,20 @@
                 display: flex;
                 align-items: center;
                 gap: 4rem;
+
+                @media (min-width: 640px) {
+                  gap: 3rem;
+                }
               }
 
               &__links {
                 display: flex;
                 gap: 4rem;
                 padding-bottom: 0.75rem;
+
+                @media (min-width: 640px) {
+                  gap: 3rem;
+                }
 
                 a {
                   font-size: 1.8rem;
@@ -162,7 +173,11 @@
 
                 &:hover {
                   color: var(--color-white);
-                  background-color: hsl(138, 55%, 66%);
+                  background-color: hsl(201, 94%, 75%);
+                }
+
+                @media (min-width: 640px) {
+                  font-size: 1.4rem;
                 }
               }
             }
@@ -181,9 +196,9 @@
       letter-spacing: 0.13em;
       font-weight: 900;
 
-      @media (min-width: 550px) {
-        top: 20%;
-        transform: translate(40%);
+      @media (min-width: 640px) {
+        top: 25%;
+        transform: translate(17%);
       }
     }
 
@@ -192,9 +207,9 @@
       left: 45%;
       top: 52%;
 
-      @media (min-width: 550px) {
-        left: 48%;
-        top: 33%;
+      @media (min-width: 640px) {
+        left: 47%;
+        top: 43%;
       }
     }
   }
