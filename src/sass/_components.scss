@@ -198,7 +198,9 @@
 
       @media (min-width: 640px) {
         top: 25%;
-        transform: translate(17%);
+        left: 50%;
+        transform: translate(-50%);
+        width: max-content;
       }
     }
 
@@ -434,7 +436,7 @@
     text-align: center;
     padding-inline: 3.5rem;
 
-    @media (min-width: 520px) {
+    @media (min-width: 640px) {
       align-items: center;
     }
 
@@ -451,6 +453,10 @@
 
         margin-block-start: 6.8rem;
         margin-block-end: 4.7rem;
+
+        @media (min-width: 640px) {
+          scale: 1.6;
+        }
       }
 
       .footer__nav {
@@ -463,8 +469,10 @@
         justify-content: space-between;
         margin-block-end: 8.9rem;
 
-        @media (min-width: 520px) {
-          gap: 3.5rem;
+        @media (min-width: 640px) {
+          gap: 5rem;
+          font-size: 2rem;
+          margin-block-end: 7rem;
         }
 
         a:link,
@@ -484,6 +492,11 @@
         justify-content: center;
         gap: 2.6rem;
         margin-block-end: 8rem;
+
+        @media (min-width: 640px) {
+          gap: 2.5rem;
+          scale: 1.1;
+        }
       }
 
       &__social-link:hover {
