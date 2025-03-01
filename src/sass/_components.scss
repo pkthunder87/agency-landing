@@ -47,11 +47,11 @@
     position: relative;
     color: var(--color-white);
 
-    @media (min-width: 550px) {
-      background-image: url("./assets/images/desktop/image-header.jpg");
+    background-size: cover;
+    background-position: center;
 
-      background-size: cover;
-      background-position: center;
+    @media (min-width: 501px) {
+      background-image: url("./assets/images/desktop/image-header.jpg");
     }
   }
 
@@ -60,6 +60,10 @@
     justify-content: space-between;
     align-items: center;
     padding-inline: var(--margin-gutters);
+
+    @media (min-width: 375px) {
+      margin-block-start: 1.5rem;
+    }
 
     .nav__logo {
     }
@@ -282,7 +286,8 @@
     padding-block-start: 2.5rem;
     padding-block-end: 20rem;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: 50% -4rem;
     position: relative;
     text-align: center;
 
@@ -298,8 +303,13 @@
         margin-block-start: 34rem;
         margin-block-end: 4rem;
 
+        @media (min-width: 450px) {
+          margin-block-start: 40rem;
+        }
+
         @media (min-width: 640px) {
           margin-block-end: 0;
+          margin-block-start: 34rem;
         }
 
         &--1 {
@@ -344,6 +354,10 @@
         font-weight: 900;
         letter-spacing: 4px;
         color: var(--color-gray-blue);
+
+        @media (min-width: 475px) {
+          font-size: 2rem;
+        }
 
         @media (min-width: 640px) {
           font-size: 2.5rem;
@@ -436,6 +450,10 @@
     text-align: center;
     padding-inline: 3.5rem;
 
+    @media (min-width: 450px) {
+      padding-inline: 5.5rem;
+    }
+
     @media (min-width: 640px) {
       align-items: center;
     }
@@ -443,6 +461,10 @@
     .footer {
       &__container {
         max-width: 39rem;
+
+        @media (min-width: 450px) {
+          max-width: 44rem;
+        }
       }
 
       &__title {
@@ -454,7 +476,7 @@
         margin-block-start: 6.8rem;
         margin-block-end: 4.7rem;
 
-        @media (min-width: 640px) {
+        @media (min-width: 450px) {
           scale: 1.6;
         }
       }
@@ -469,9 +491,15 @@
         justify-content: space-between;
         margin-block-end: 8.9rem;
 
+        @media (min-width: 450px) {
+          gap: 1rem;
+          font-size: 2.2rem;
+          margin-block-start: 6rem;
+        }
+
         @media (min-width: 640px) {
           gap: 5rem;
-          font-size: 2rem;
+          margin-block-start: 0;
           margin-block-end: 7rem;
         }
 
@@ -493,9 +521,10 @@
         gap: 2.6rem;
         margin-block-end: 8rem;
 
-        @media (min-width: 640px) {
+        @media (min-width: 450px) {
           gap: 2.5rem;
-          scale: 1.1;
+          scale: 1.2;
+          margin-block-end: 10rem;
         }
       }
 

@@ -46,9 +46,10 @@
   left: 50%;
   transform: translate(-50%);
 
-  @media (min-width: 640px) {
+  @media (min-width: 450px) {
     font-size: 1.6rem;
     margin-inline-start: 1rem;
+    bottom: 3rem;
   }
 }
 
