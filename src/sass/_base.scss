@@ -122,32 +122,3 @@ button {
   background-color: inherit;
   padding: 0;
 }
-
-/* =======================
-     3.0 Tablet 550px - 899px 
-     ======================= */
-
-@media (min-width: 550px) {
-  html {
-    font-size: 62.5%;
-  }
-
-  body {
-  }
-}
-
-/* ==================
-     4.0 800px and 1099 
-     ================== */
-@media (min-width: 800px) {
-  body {
-  }
-}
-
-/* ====================
-     5.0 1100px and Above 
-     ==================== */
-@media (min-width: 1100px) {
-  body {
-  }
-}
